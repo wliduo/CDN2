@@ -1,0 +1,33 @@
+**
+ * TODO: $desc$
+ *
+$param$
+ * @return $return$
+ * @throws $throws$
+ * @author wliduo[i@dolyw.com]
+ * @date $date$ $time$
+ */
+
+--------------------------------------------------
+param  : groovyScript("def result=''; def params=\"${_1}\".replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i < params.size(); i++) {result+=' * @param ' + params[i] + ((i < params.size() - 1) ? '\\r\\n' : '')}; return result", methodParameters())
+return : methodReturnType()
+throws : completeSmart()
+date   : date()
+time   : time()
+desc   : 
+--------------------------------------------------
+
+
+
+
+**
+ * $desc$
+ * 
+ * @author wliduo[i@dolyw.com]
+ * @date $date$ $time$
+ */
+ --------------------------------------------------
+date   : date()
+time   : time()
+desc   : 
+--------------------------------------------------
